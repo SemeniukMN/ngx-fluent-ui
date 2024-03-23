@@ -9,6 +9,11 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
+    "paths": {
+      "ngx-fluent-ui": [
+        "./dist/ngx-fluent-ui"
+      ]
+    },
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,
