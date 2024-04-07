@@ -1,0 +1,179 @@
+@import "corner-radius";
+@import "spacing";
+@import "colors";
+@import "texts";
+
+:host {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: $corner-radius-medium;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  user-select: none;
+
+  &.small {
+    @include caption-1();
+    padding: $spacing-none $spacing-s;
+    height: 24px;
+  }
+
+  &.medium {
+    @include body-1-strong();
+    padding: $spacing-none $spacing-m;
+    height: 32px;
+  }
+
+  &.large {
+    @include subtitle-2();
+    padding: $spacing-none $spacing-l;
+    height: 40px;
+  }
+
+  &.primary {
+    background: $brand-background-1-rest;
+    color: $neutral-foreground-on-brand-rest;
+
+    &.selected {
+      background: $brand-background-1-selected;
+    }
+
+    &:hover {
+      background: $brand-background-1-hover;
+    }
+
+    &:active {
+      background: $brand-background-1-pressed;
+    }
+
+    &:focus-visible {
+      box-shadow: 0 0 0 2px $neutral-stroke-focus-2-rest inset,
+                  0 0 0 3px $neutral-stroke-focus-1-rest inset;
+    }
+
+    &.disabled {
+      background: $neutral-background-disabled-rest;
+      color: $neutral-foreground-disabled-rest;
+      pointer-events: none;
+    }
+  }
+
+  &.secondary {
+    background: $neutral-background-1-rest;
+    box-shadow: 0 0 0 1px $neutral-stroke-1-rest inset;
+    color: $neutral-foreground-1-rest;
+
+    &.selected {
+      background: $neutral-background-1-selected;
+    }
+
+    &:hover {
+      background: $neutral-background-1-hover;
+    }
+
+    &:active {
+      background: $neutral-background-1-pressed;
+    }
+
+    &:focus-visible {
+      box-shadow: 0 0 0 2px $neutral-stroke-focus-2-rest inset;
+    }
+
+    &.disabled {
+      background: $neutral-background-disabled-rest;
+      color: $neutral-foreground-disabled-rest;
+      pointer-events: none;
+    }
+  }
+
+  &.outline {
+    background: $neutral-background-transparent-rest;
+    box-shadow: 0 0 0 1px $neutral-stroke-1-rest inset;
+    color: $neutral-foreground-1-rest;
+
+    &.selected {
+      background: $neutral-background-transparent-selected;
+      box-shadow: 0 0 0 2px $neutral-stroke-1-rest inset;
+    }
+
+    &:hover {
+      background: $neutral-background-transparent-hover;
+    }
+
+    &:active {
+      background: $neutral-background-transparent-pressed;
+    }
+
+    &:focus-visible {
+      box-shadow: 0 0 0 2px $neutral-stroke-focus-2-rest inset;
+    }
+
+    &.disabled {
+      background: none;
+      box-shadow: 0 0 0 1px $neutral-stroke-disabled-rest inset;
+      color: $neutral-foreground-disabled-rest;
+      pointer-events: none;
+    }
+  }
+
+  &.subtle {
+    background: $neutral-background-subtle-rest;
+    color: $neutral-foreground-2-rest;
+
+    &.selected {
+      background: $neutral-background-subtle-selected;
+      color: $neutral-foreground-2-selected;
+    }
+
+    &:hover {
+      background: $neutral-background-subtle-hover;
+      color: $neutral-foreground-2-hover;
+    }
+
+    &:active {
+      background: $neutral-background-subtle-pressed;
+      color: $neutral-foreground-2-pressed;
+    }
+
+    &:focus-visible {
+      box-shadow: 0 0 0 2px $neutral-stroke-focus-2-rest inset;
+    }
+
+    &.disabled {
+      background: none;
+      color: $neutral-foreground-disabled-rest;
+      pointer-events: none;
+    }
+  }
+
+  &.transparent {
+    background: $neutral-background-transparent-rest;
+    color: $neutral-foreground-2-rest;
+
+    &.selected {
+      background: $neutral-background-transparent-selected;
+      color: $neutral-foreground-2-brand-selected;
+    }
+
+    &:hover {
+      background: $neutral-background-transparent-hover;
+      color: $neutral-foreground-2-brand-hover;
+    }
+
+    &:active {
+      background: $neutral-background-transparent-pressed;
+      color: $neutral-foreground-2-brand-pressed;
+    }
+
+    &:focus-visible {
+      box-shadow: 0 0 0 2px $neutral-stroke-focus-2-rest inset;
+    }
+
+    &.disabled {
+      background: none;
+      color: $neutral-foreground-disabled-rest;
+      pointer-events: none;
+    }
+  }
+}

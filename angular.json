@@ -101,7 +101,7 @@
       "projectType": "library",
       "root": "projects/ngx-fluent-ui",
       "sourceRoot": "projects/ngx-fluent-ui/src",
-      "prefix": "lib",
+      "prefix": "flu",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",

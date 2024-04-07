@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("./assets/fonts/segoe-ui/SegoeUILight.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("./assets/fonts/segoe-ui/SegoeUIRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("./assets/fonts/segoe-ui/SegoeUIItalic.woff") format("woff");
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("./assets/fonts/segoe-ui/SegoeUISemibold.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("./assets/fonts/segoe-ui/SegoeUIBold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}

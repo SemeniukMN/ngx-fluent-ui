@@ -1,0 +1,123 @@
+@import "typography/family";
+@import "typography/font-size";
+@import "typography/line-height";
+@import "typography/weight";
+
+@mixin caption-2() {
+  font-family: $family-base;
+  font-size: $font-size-100;
+  font-weight: $weight-regular;
+  line-height: $line-height-100;
+}
+
+@mixin caption-2-strong() {
+  font-family: $family-base;
+  font-size: $font-size-100;
+  font-weight: $weight-semibold;
+  line-height: $line-height-100;
+}
+
+@mixin caption-1() {
+  font-family: $family-base;
+  font-size: $font-size-200;
+  font-weight: $weight-regular;
+  line-height: $line-height-200;
+}
+
+@mixin caption-1-strong() {
+  font-family: $family-base;
+  font-size: $font-size-200;
+  font-weight: $weight-semibold;
+  line-height: $line-height-200;
+}
+
+@mixin caption-1-stronger() {
+  font-family: $family-base;
+  font-size: $font-size-200;
+  font-weight: $weight-bold;
+  line-height: $line-height-200;
+}
+
+@mixin body-1() {
+  font-family: $family-base;
+  font-size: $font-size-300;
+  font-weight: $weight-regular;
+  line-height: $line-height-300;
+}
+
+@mixin body-1-strong() {
+  font-family: $family-base;
+  font-size: $font-size-300;
+  font-weight: $weight-semibold;
+  line-height: $line-height-300;
+}
+
+@mixin body-1-stronger() {
+  font-family: $family-base;
+  font-size: $font-size-300;
+  font-weight: $weight-bold;
+  line-height: $line-height-300;
+}
+
+@mixin body-2() {
+  font-family: $family-base;
+  font-size: $font-size-400;
+  font-weight: $weight-regular;
+  line-height: $line-height-400;
+}
+
+@mixin subtitle-2() {
+  font-family: $family-base;
+  font-size: $font-size-400;
+  font-weight: $weight-semibold;
+  line-height: $line-height-400;
+}
+
+@mixin subtitle-2-stronger() {
+  font-family: $family-base;
+  font-size: $font-size-400;
+  font-weight: $weight-bold;
+  line-height: $line-height-400;
+}
+
+@mixin subtitle-1() {
+  font-family: $family-base;
+  font-size: $font-size-500;
+  font-weight: $weight-semibold;
+  line-height: $line-height-500;
+}
+
+@mixin title-3() {
+  font-family: $family-base;
+  font-size: $font-size-600;
+  font-weight: $weight-semibold;
+  line-height: $line-height-600;
+}
+
+@mixin title-2() {
+  font-family: $family-base;
+  font-size: $font-size-700;
+  font-weight: $weight-semibold;
+  line-height: $line-height-600;
+}
+
+@mixin title-1() {
+  font-family: $family-base;
+  font-size: $font-size-800;
+  font-weight: $weight-semibold;
+  line-height: $line-height-600;
+}
+
+@mixin large-title() {
+  font-family: $family-base;
+  font-size: $font-size-900;
+  font-weight: $weight-semibold;
+  line-height: $line-height-600;
+}
+
+@mixin display() {
+  font-family: $family-base;
+  font-size: $font-size-1000;
+  font-weight: $weight-semibold;
+  line-height: $line-height-600;
+}
